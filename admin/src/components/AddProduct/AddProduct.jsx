@@ -11,7 +11,7 @@ const AddProduct = () => {
     newPrice: '',
     oldPrice: '',
   });
-
+// to upload the image
   const imageHandler = (e) => {
     setProductDetails({ ...productDetails, image: e.target.files[0] });
   };
