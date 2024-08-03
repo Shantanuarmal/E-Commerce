@@ -1,0 +1,114 @@
+.footer {
+    background-color: #f8f8f8; /* Light grey background for a clean look */
+    padding: 40px 20px; /* Padding for spacing around the footer */
+    text-align: center; /* Center all text */
+    color: #333; /* Dark grey text color for contrast */
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Space between logo and links */
+}
+
+.footer-logo img {
+    height: 50px; /* Size the logo appropriately */
+}
+
+.footer-logo p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.footer-links {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    margin-bottom: 20px; /* Space between links and social icons */
+}
+
+.footer-links li {
+    display: inline; /* Make list items display inline */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey link color */
+    font-size: 16px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover {
+    color: #ff4141; /* Change link color on hover */
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between social icons */
+    margin-bottom: 20px; /* Space between icons and copyright */
+}
+
+.footer-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff; /* White background for icons */
+    border-radius: 50%; /* Round icons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-icons-container:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.footer-icons-container img {
+    width: 20px; /* Size the icons appropriately */
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #666; /* Lighter grey for copyright text */
+}
+
+.footer hr {
+    width: 80%; /* Make the horizontal line shorter */
+    border: none;
+    border-top: 1px solid #ccc; /* Light grey horizontal line */
+    margin: 20px auto; /* Center and space the line */
+}
+
+@media(max-width:800px){
+.footer{
+    gap: 20px;
+}
+.footer-logo{
+  gap: 10px; 
+  align-items: end;  
+}
+.footer-logo img{
+    width:40px ;
+}
+.footer-logo p{
+   font-size: 25px;
+}
+.footer-links{
+  font-size: 14px;  
+  gap: 10px;
+}
+.footer-social-icon img{
+    width: 22px;
+}
+.footer-copyright{
+    font-size: 12px;
+}
+}

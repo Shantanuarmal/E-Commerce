@@ -1,0 +1,123 @@
+/* .item{
+    width: 350px;
+}
+.item p{
+    margin: 6px 0px;
+}
+.item-prices{
+    display: flex;
+    gap: 20px;
+}
+.item-price-new{
+    color: #374151;
+    font-size:18px ;
+    font-weight: 600;
+}
+.item-price-old{
+    color: #6b7280;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.item:hower{
+    transform: scale(1.05);
+    transition: 0.6s;
+} */
+
+
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 auto;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.item .item-prices {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.item .item-price-new {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.item .item-price-old {
+    color: #777;
+    text-decoration: line-through;
+}
+
+.item {
+    width: 250px;
+    padding: 15px;
+}
+@media(max-width:1280px){
+    .item{
+        width: 200px;
+        font-size: 14px;
+    }
+    .item img{
+        width: 220px;
+    }
+    .item-price-old{
+        font-size: 14px;
+    } 
+}
+@media(max-width:1024px){
+    .item{
+        width: 170px;
+        font-size: 13px;     
+    }
+    .item img{
+        width: 170px;
+    }
+    .item-price-old{
+        font-size: 13px;
+    }
+}
+@media(max-width:800px){
+    .item{
+        width: 120px;
+        font-size: 12px;     
+    }
+    .item img{
+        width: 120px;
+    }
+    .item-price-old{
+        font-size: 12px;
+    }
+}
+@media(max-width:500px){
+    .item{
+        width: 160px;             
+    }
+    .item img{
+        width: 160px;
+    }
+}
